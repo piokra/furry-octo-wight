@@ -3,6 +3,7 @@ package com.panpiotr.console;
 import android.opengl.GLSurfaceView;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,6 +37,7 @@ public class ExampleActivity extends ActionBarActivity {
         t.start();
         setContentView(m_layout);
         m_layout.addView(m_console.getView());
+
 
 
     }

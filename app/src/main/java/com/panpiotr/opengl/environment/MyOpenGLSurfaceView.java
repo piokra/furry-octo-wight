@@ -21,8 +21,10 @@ public class MyOpenGLSurfaceView extends GLSurfaceView
     public MyOpenGLSurfaceView(Context context)
     {
         super(context);
-        m_renderer = new MyOpenGLRenderer();
+        setEGLContextClientVersion(2);
+        m_renderer = new MyOpenGLRenderer(context);
         setRenderer(m_renderer);
+
 
     }
     public MyOpenGLSurfaceView(Context context, Events events)
